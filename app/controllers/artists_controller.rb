@@ -22,7 +22,7 @@ class ArtistsController < ApplicationController
   end
 
   def edit
-    @artist = Artist.find(params[:id])
+    @artist = Artist.find(id: params[:id])
   end
 
   def update
